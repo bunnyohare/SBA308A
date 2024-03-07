@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+
     <header><h1>Vote on all the kitties!</h1></header>
+    <main>
     <h2>Does this cat make you smile? </h2>
 
   <div id="vote-options" class="vote-options">
@@ -25,6 +27,13 @@
   <button onClick="showVoteOptions()">Show Vote Options</button>
     <div id="grid" class="imgrid"/>
  </div>
-    <script src="voteCat.js"></script>
+    </main>
+ <footer>
+    <p>Click on Show Vote Options to vote on a kitty!</p>
+  </footer>
+ <!-- Axios -->
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+ <script src="voteCatAxios.js"></script>
+  
 </body>
 </html>

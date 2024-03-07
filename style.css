@@ -31,6 +31,7 @@
   main {
     padding: 20px;
     background-color: #fffae3; /* Very light pastel yellow */
+    height: 80vh;
   }
   
   /* Style headings within the main area */
@@ -49,17 +50,17 @@
     justify-content: center;
   }
   
-  .red {
-    border-color: red ;
+  .down {
+    border-color: rgb(30, 2, 2) ;
     padding: 1%;
     border-style: solid;
-    border-width: medium;
+    border-width: thick;
   }
-  .green {
-    border-color: green ;
+  .up {
+    border-color: rgb(244, 165, 8) ;
     padding: 1%;
     border-style: solid;
-    border-width: medium;
+    border-width: thick;
   }
   .col {
     border-color: red ;
@@ -89,6 +90,20 @@
   .imgrid {
     display: flex;
     flex-wrap: wrap;
+    overflow: auto;
+    height: 70vh;
     justify-content: space-between;
-    height: 1500px;
+  }
+
+  /* Style the footer */
+  footer {
+    background-color: #e0ece4; /* Same color as header for consistency */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Optional: Style the footer content */
+  footer p {
+    margin: 0;
+    color: #333; /* Mild gray for text */
   }
