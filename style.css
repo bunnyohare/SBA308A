@@ -1,0 +1,94 @@
+/* Boilerplate pastels CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a pastel background color for the body */
+  body {
+    background-color: #faf3f3; /* Soft pink */
+    color: #5c5c5c; /* Mild gray for text */
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #e0ece4; /* Pastel mint */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Style the main content area */
+  main {
+    padding: 20px;
+    background-color: #fffae3; /* Very light pastel yellow */
+  }
+  
+  /* Style headings within the main area */
+  main h2, main h3, main h4 {
+    color: #333;
+  }
+  
+  
+  .maincontent{
+    padding-top: 0%;
+    padding-left:0%;
+  }
+
+  #cat-container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .red {
+    border-color: red ;
+    padding: 1%;
+    border-style: solid;
+    border-width: medium;
+  }
+  .green {
+    border-color: green ;
+    padding: 1%;
+    border-style: solid;
+    border-width: medium;
+  }
+  .col {
+    border-color: red ;
+    padding: 1%;
+    border-style: solid;
+    border-width: medium;
+  }
+  .col-lg{
+      max-height: 400px;
+      overflow: hidden;
+      margin: 10px 0;
+      position: relative;
+      flex-basis: 30%;
+  }
+  
+  .col-lg img{
+    display:block;
+      position: absolute;
+      left: -1000%;
+      right: -1000%;
+      top: -1000%;
+      bottom: -1000%;
+      margin: auto;
+      min-height: 100%;
+      min-width: 100%;
+  }
+  .imgrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 1500px;
+  }

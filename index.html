@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote on Cats!</title>
+    <link rel="stylesheet" href="style.css">
+    <header>Vote on all the kitties!</header>
+</head>
+<body>
+    <h1>Does this cat make you smile? </h1>
+
+  <div id="vote-options" class="vote-options">
+  <button onClick="vote(1)">Vote Up </button>
+  <button onClick="vote(-1)">Vote Down </button>
+  <button onClick="showHistoricVotes()">History </button>
+    
+<div id="cat-container">
+  <img id="image-to-vote-on" class="col-lg"></img>
+  </div>
+  
+  </div>
+
+  <div id="vote-results"  class="vote-results">
+  <button onClick="showVoteOptions()">Show Vote Options</button>
+    <div id="grid" class="imgrid"/>
+ </div>
+    <script src="voteCat.js"></script>
+</body>
+</html>
