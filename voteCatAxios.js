@@ -13,7 +13,11 @@ async function showHistoricVotes() {
         const response = await axios.get(url, { headers: { 'x-api-key': API_KEY } });
         const data = response.data;
 
-        data.forEach(voteData => {
+        // Determine how many items to display
+        const maxItems = Math.min(data.length, 6); 
+
+        for (let i = 0; i < maxItems; i++) {
+            const voteData = data[i];
             const imageData = voteData.image;
             let image = document.createElement('img');
             image.src = imageData.url;
@@ -29,11 +33,12 @@ async function showHistoricVotes() {
             gridCell.classList.add('col-lg');
             gridCell.appendChild(image);
             document.getElementById('grid').appendChild(gridCell);
-        });
+        }
     } catch (error) {
         console.log(error);
     }
 }
+
 
 async function showVoteOptions() {
     document.getElementById("grid").innerHTML = '';
